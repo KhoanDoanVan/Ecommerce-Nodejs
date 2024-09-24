@@ -1,0 +1,60 @@
+### post sign up
+
+POST http://localhost:2907/v1/api/shop/signup
+Content-Type: application/json;charset=UTF-8
+x-api-key: 4b24f78a6ef3f299b38c15ce3576567d012958eaca0b538d7954e91aea32752c64dc637fa113b792a3144514c67df628554cbc9f673809e688e2c32cf57e431d
+
+{
+  "name": "testlogger",
+  "email": "testlogger@gmail.com",
+  "password": "anhyeuhan123"
+}
+
+### post login
+POST http://localhost:2907/v1/api/shop/login
+Content-Type: application/json;charset=UTF-8
+x-api-key: 4b24f78a6ef3f299b38c15ce3576567d012958eaca0b538d7954e91aea32752c64dc637fa113b792a3144514c67df628554cbc9f673809e688e2c32cf57e431d
+
+{
+  "email" : "khoandeptroai@gmail.com",
+  "password" : "anhyeuhan123"
+}
+
+### post logout
+POST http://localhost:2907/v1/api/shop/logout
+x-api-key: 4b24f78a6ef3f299b38c15ce3576567d012958eaca0b538d7954e91aea32752c64dc637fa113b792a3144514c67df628554cbc9f673809e688e2c32cf57e431d
+x-client-id: 655b95f3048fb458a3aca0bf
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTViOTVmMzA0OGZiNDU4YTNhY2EwYmYiLCJlbWFpbCI6Imtob2FuZGVwdHJhaTExQGdtYWlsLmNvbSIsImlhdCI6MTcwMDUwMTAwMiwiZXhwIjoxNzAwNjczODAyfQ.SUauiicIp42bcSzf_pkLksqumWtLjoABojOIG0-lDZI
+
+### post handler refresh token
+POST http://localhost:2907/v1/api/shop/handlerRefreshToken
+x-api-key: 4b24f78a6ef3f299b38c15ce3576567d012958eaca0b538d7954e91aea32752c64dc637fa113b792a3144514c67df628554cbc9f673809e688e2c32cf57e431d
+x-client-id: 6566486f13f61b62b2b3a7d3
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTY2NDg2ZjEzZjYxYjYyYjJiM2E3ZDMiLCJlbWFpbCI6Imtob2FuZGVwdHJvYWlAZ21haWwuY29tIiwiaWF0IjoxNzAxMjAyMDQ2LCJleHAiOjE3MDEzNzQ4NDZ9.KNFhUeuaMlSWEIkecbyCCMRhiaBtDPcxC4AlrMldwO4
+
+{
+  "refreshToken" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTY2NDg2ZjEzZjYxYjYyYjJiM2E3ZDMiLCJlbWFpbCI6Imtob2FuZGVwdHJvYWlAZ21haWwuY29tIiwiaWF0IjoxNzAxMjAyMDQ2LCJleHAiOjE3MDE4MDY4NDZ9.kWr8C4Min9E_ERQBEO4zqfHH6CKObtr56VlhlUArp9I"
+}
+
+### create new product
+POST http://localhost:2907/v1/api/product
+x-api-key: 4b24f78a6ef3f299b38c15ce3576567d012958eaca0b538d7954e91aea32752c64dc637fa113b792a3144514c67df628554cbc9f673809e688e2c32cf57e431d
+x-client-id: 6563bf0092408ddc01ebaec6
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTYzYmYwMDkyNDA4ZGRjMDFlYmFlYzYiLCJlbWFpbCI6ImRvYW52YW5raG9hbnlldWhhbkBnbWFpbC5jb20iLCJpYXQiOjE3MDEwMzU3OTMsImV4cCI6MTcwMTIwODU5M30.YoiQDk2IzgB9IZ4Vpo-v-EQ5ecYY9Htxwq2cricpwhs
+
+{
+  "product_name" : "New Pants",
+  "product_description" : "Khoan sells it",
+  "product_price" : 130000,
+  "product_shop" : "6563bf0092408ddc01ebaec6",
+  "product_type" : "Clothing",
+  "product_thumb" : "product_thumb",
+  "product_quantity" : 10,
+  "product_attributes" : {
+    "brand" : "Menden",
+    "size" : "L",
+    "material" : "Pants"
+  }
+}
+
+###
